@@ -19,7 +19,7 @@ function createPixels(size){
 
     container.innerHTML =  "";
     const totalPixels = size*size;
-    const pixelSize = Math.floor(600 / size);
+    const pixelSize = Math.floor(500 / size);
 
     for(let i = 0; i< totalPixels; i++){
 
@@ -81,7 +81,7 @@ rainbow_button.addEventListener("click", ()=>{
 
 eraser_button.addEventListener("click", ()=>{
     console.log("clear button is clicked");
-    currentMode = 'Eraser';
+    currentMode = 'Color' || 'Rainbow';
     createPixels(size_scale.value);
 });
 
