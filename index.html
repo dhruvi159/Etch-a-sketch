@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sketch</h1>
+    <section>
+        <div id="controlPanel">
+            <input type="color" id="colorSelector">
+            <button id="colorBtn">Color</button>
+            <button id="rainbowBtn">Rainbow</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
+            <div class="sizeDiv">
+                <p id="displaySize">3 x 3</p>
+                <input type="range" id="sizeScale" min="1" max="64" value="3">
+            </div>
+        </div>
+        <div id="sketch">
+            <div id="container"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
